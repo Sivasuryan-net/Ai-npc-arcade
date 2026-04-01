@@ -1,0 +1,5 @@
+# Requirements — add these to your existing project dependencies
+# Install with:  pip install -r requirements_npc.txt
+
+google-generativeai>=0.7.0
+python-dotenv>=1.0.0

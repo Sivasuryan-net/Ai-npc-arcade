@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="15" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="characters" tilewidth="64" tileheight="64">
+  <image source="characters.png" width="384" height="384"/>
+  <tile id="0">
+   <properties>
+    <property name="att_1_cooldown" value="30"/>
+    <property name="att_1_damage" value="10"/>
+    <property name="att_1_pierce" value="0"/>
+    <property name="att_1_projectile_amount" value="1"/>
+    <property name="att_1_projectile_lifetime" value="60"/>
+    <property name="att_1_projectile_speed" value="7"/>
+    <property name="att_1_spread_angle" value="15"/>
+    <property name="att_1_stun" value="30"/>
+    <property name="max_hp" value="150"/>
+    <property name="max_x_vel" value="7"/>
+    <property name="max_y_vel" value="14"/>
+    <property name="type" value="player"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="ai" value="green_1"/>
+    <property name="att_1_cooldown" value="60"/>
+    <property name="att_1_damage" value="10"/>
+    <property name="att_1_pierce" value="1"/>
+    <property name="att_1_projectile_amount" value="3"/>
+    <property name="att_1_projectile_lifetime" value="60"/>
+    <property name="att_1_projectile_speed" value="4"/>
+    <property name="att_1_spread_angle" value="15"/>
+    <property name="att_1_stun" value="20"/>
+    <property name="max_hp" value="100"/>
+    <property name="max_x_vel" value="4"/>
+    <property name="max_y_vel" value="0"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="ai" value="pink_1"/>
+    <property name="att_1_cooldown" value="60"/>
+    <property name="att_1_damage" value="20"/>
+    <property name="att_1_pierce" value="1"/>
+    <property name="att_1_projectile_amount" value="1"/>
+    <property name="att_1_projectile_lifetime" value="15"/>
+    <property name="att_1_projectile_speed" value="7"/>
+    <property name="att_1_spread_angle" value="0"/>
+    <property name="att_1_stun" value="10"/>
+    <property name="max_hp" value="100"/>
+    <property name="max_x_vel" value="4"/>
+    <property name="max_y_vel" value="9"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="ai" value="green_2"/>
+    <property name="att_1_cooldown" value="60"/>
+    <property name="att_1_damage" value="10"/>
+    <property name="att_1_pierce" value="1"/>
+    <property name="att_1_projectile_amount" value="8"/>
+    <property name="att_1_projectile_lifetime" value="20"/>
+    <property name="att_1_projectile_speed" value="5"/>
+    <property name="att_1_spread_angle" value="45"/>
+    <property name="att_1_stun" value="20"/>
+    <property name="max_hp" value="50"/>
+    <property name="max_x_vel" value="0"/>
+    <property name="max_y_vel" value="0"/>
+    <property name="no_gravity" value="1"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="ai" value="pink_2"/>
+    <property name="att_1_cooldown" value="60"/>
+    <property name="att_1_damage" value="10"/>
+    <property name="att_1_pierce" value="1"/>
+    <property name="att_1_projectile_amount" value="8"/>
+    <property name="att_1_projectile_lifetime" value="15"/>
+    <property name="att_1_projectile_speed" value="7"/>
+    <property name="att_1_spread_angle" value="45"/>
+    <property name="att_1_stun" value="20"/>
+    <property name="max_hp" value="50"/>
+    <property name="max_x_vel" value="0"/>
+    <property name="max_y_vel" value="0"/>
+    <property name="no_gravity" value="1"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="ai" value="pink_boss"/>
+    <property name="att_1_cooldown" value="0"/>
+    <property name="att_1_damage" value="10"/>
+    <property name="att_1_pierce" value="1"/>
+    <property name="att_1_projectile_amount" value="1"/>
+    <property name="att_1_projectile_lifetime" value="10"/>
+    <property name="att_1_projectile_speed" value="3"/>
+    <property name="att_1_spread_angle" value="0"/>
+    <property name="att_1_stun" value="10"/>
+    <property name="att_2_cooldown" value="50"/>
+    <property name="att_2_damage" value="20"/>
+    <property name="att_2_pierce" value="1"/>
+    <property name="att_2_projectile_amount" value="1"/>
+    <property name="att_2_projectile_lifetime" value="25"/>
+    <property name="att_2_projectile_speed" value="7"/>
+    <property name="att_2_spread_angle" value="0"/>
+    <property name="att_2_stun" value="17"/>
+    <property name="att_3_cooldown" value="90"/>
+    <property name="att_3_damage" value="2"/>
+    <property name="att_3_pierce" value="1"/>
+    <property name="att_3_projectile_amount" value="8"/>
+    <property name="att_3_projectile_lifetime" value="15"/>
+    <property name="att_3_projectile_speed" value="6"/>
+    <property name="att_3_spread_angle" value="45"/>
+    <property name="att_3_stun" value="10"/>
+    <property name="max_hp" value="100"/>
+    <property name="max_x_vel" value="5"/>
+    <property name="max_y_vel" value="0"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="ai" value="pink_3"/>
+    <property name="att_1_cooldown" value="45"/>
+    <property name="att_1_damage" value="2"/>
+    <property name="att_1_pierce" value="1"/>
+    <property name="att_1_projectile_amount" value="8"/>
+    <property name="att_1_projectile_lifetime" value="15"/>
+    <property name="att_1_projectile_speed" value="6"/>
+    <property name="att_1_spread_angle" value="45"/>
+    <property name="att_1_stun" value="10"/>
+    <property name="max_hp" value="100"/>
+    <property name="max_x_vel" value="2"/>
+    <property name="max_y_vel" value="0"/>
+    <property name="type" value="enemy"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="collectibles" tilewidth="64" tileheight="64">
+  <image source="collectibles.png" width="256" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="recovery" value="10"/>
+    <property name="size" value="s"/>
+    <property name="type" value="heal_potion"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="recovery" value="45"/>
+    <property name="size" value="m"/>
+    <property name="type" value="heal_potion"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="recovery" value="75"/>
+    <property name="size" value="l"/>
+    <property name="type" value="heal_potion"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="tag" value="add_projectile"/>
+    <property name="type" value="skill_up"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="tag" value="pierce"/>
+    <property name="type" value="skill_up"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="53" name="tileset_neutral_01" tilewidth="64" tileheight="64">
+  <properties>
+   <property name="type" value="deadly"/>
+  </properties>
+  <image source="tileset_neutral_01.png" width="640" height="640"/>
+  <tile id="1">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="type" value="deadly"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="153" name="tileset_green_01" tilewidth="64" tileheight="64">
+  <image source="tileset_green_01.png" width="640" height="640"/>
+  <tile id="1">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="type" value="deadly"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="curse" value="green"/>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="curse" value="green"/>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="curse" value="green"/>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+  <tile id="37">
+   <properties>
+    <property name="curse" value="green"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="253" name="tileset_green_02" tilewidth="64" tileheight="64">
+  <image source="tileset_green_02.png" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="353" name="tileset_pink_01" tilewidth="64" tileheight="64">
+  <image source="tileset_pink_01.png" width="640" height="640"/>
+  <tile id="1">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="type" value="deadly"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="curse" value="pink"/>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="curse" value="pink"/>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="curse" value="pink"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="curse" value="pink"/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="curse" value="pink"/>
+    <property name="type" value="corner"/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="curse" value="pink"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="453" name="tileset_pink_02" tilewidth="64" tileheight="64">
+  <image source="tileset_pink_02.png" width="640" height="640"/>
+ </tileset>
+ <tileset firstgid="553" name="portals" tilewidth="64" tileheight="64">
+  <image source="portals.png" width="1024" height="436"/>
+  <tile id="0">
+   <properties>
+    <property name="setting" value="neutral"/>
+    <property name="type" value="portal"/>
+    <property name="x" value="2"/>
+    <property name="y" value="2"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="setting" value="pink"/>
+    <property name="type" value="portal"/>
+    <property name="x" value="2"/>
+    <property name="y" value="2"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="setting" value="green"/>
+    <property name="type" value="portal"/>
+    <property name="x" value="2"/>
+    <property name="y" value="2"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="649" name="tileset_special_01" tilewidth="64" tileheight="64">
+  <image source="tileset_special_01.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="bg" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B+4CAQHwLiwzS04zQQbwfinzS04yqNzR8Fo4BSAAD/qQaQ
+  </data>
+ </layer>
+ <layer name="walls" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyzZ2Bg8KIxtmegLXAconZkMGLaYQrEngzYw9GcCDPTgGZWQXEqENcAcTqSPTA7Chgh/sGGibGnAGo+COdDMbIdiYw4tZIF2hghmFw7YGFKjN/ItQOkfiYe+UosZpFjBz5QiMcOYvOrNwE7CnDY4URAH6VgKNphxoA9fH2wiOPC6GpBfFA+BeVjSyTsiCQOwgAnFCcs
+  </data>
+ </layer>
+ <layer name="decoration behind" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAf+MnEwPCPCVPsFxN29aOANuAlCeF9CYgvQzGtwB0gvgvFpIBTjITVYEtfQD8tIMUOUBicAuIrOOzjgaoBASaomlMk2AECoDC4AmWD7EG36wFUzSgYfKAaiPsH2hFYAADo/hnI
+  </data>
+ </layer>
+ <layer name="decoration front" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIxW0MTAcAGEYuxWIJ0D51LRjAhS309COfiRzW6F8atoBAzBzq2lk/iggHdylox39dLADmJ4ZaigwxxJKAwAqOBuO
+  </data>
+ </layer>
+ <layer name="characters" width="25" height="15" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzF07kKwkAUheExChpBwQVMo5372sa9dbd19/2fwr+wCMGZFDMXL3wk3JBzUkyU+v80I/et77Ud2Q09pUYYY+Lpc1LQPe4kfMOCF5dYYW3oyCKXkKWbA7lHnHA2dNjMg9wnXng76EgjYx9jHB954Q6bKaAo3FFB1WFeCWWHeb+mhiC263Lmeuhj4OD81dGI7UJyp5hhLvQfbcjdYoe9UMeF3CtuuAt0fABCZwpm
+  </data>
+ </layer>
+</map>
